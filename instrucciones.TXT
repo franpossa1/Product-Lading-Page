@@ -1,0 +1,8 @@
+Ok proyecto 3 
+Landing Page de Productos. hagamos una de seguridad y camaras.
+arriba un menu sticky que tiene 4 o 5 opciones
+luego un hero con una seccion de contacto
+caracteristicas. estas podemos luego como colocarle texto que las describa
+Video demostrativo en el medio
+luego 3 cajas con 3 promos de camaras e instalacion
+Pie de pagina con copyrigth

@@ -1,0 +1,131 @@
+/*Variables*/
+
+$Font-Poppins: Poppins, san serif;
+$Color-main: #1f2e35;
+$color-secundary: #02897a;
+$color-terciary: #ffffff;
+@mixin button-main {
+    background-color: $Color-main;
+    border: 1px solid black;
+    border-radius: 4px;
+    color:$color-terciary;
+    padding:10px 20px;
+    font-weight: 600px;
+    font-family: $Font-Poppins;
+}
+@mixin button-secundary {
+    background-color: $color-secundary;
+    border: 1px solid $color-terciary;
+    border-radius: 4px;
+    color:$color-terciary;
+    padding:10px 20px;
+    font-weight: 600px;
+    font-family: $Font-Poppins;
+}
+@mixin menu_links {
+border: 1px solid $color-terciary;
+border-radius: 4px;
+padding: 20px;
+background-color: $color-secundary;
+}
+/*STYLES*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+
+  body {
+    background-color: $Color-main;
+    font-family: $Font-Poppins;
+    
+
+    /*Header*/
+    header {
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      max-width: 1400px;
+      height: 80px;
+      font-size: 16px;
+
+      .header_logo {
+        margin:20px;
+      }
+      nav {
+       display: flex;
+       color:$color-terciary;
+    
+        ul {
+          list-style-type: none;
+          margin:20px;
+          padding: 0;
+          line-height: 40px;
+          li{
+            display: inline;
+            padding: 20px;
+            a {
+                text-decoration: none;
+                color: $color-terciary;
+              
+            }
+            
+           
+          }
+        }
+        .hamburger {
+            margin: auto;
+           color: $Color-main;
+        }
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: $Color-main;
+        }
+        
+        .buttons {
+            margin:20px;
+            
+            
+        }
+      }
+    }
+    /*HERO*/
+  }
+}
+
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width:1100px) {
+  header {
+      nav {
+          ul {
+            position: fixed;
+            left: -100%;
+            color:black;
+            top: 5rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow:
+                0 10px 27px rgba(0, 0, 0, 0.05);
+                
+          }
+          .hamburger {
+              margin: auto;
+              cursor: pointer;
+             
+              .bar {
+                background-color: #FFFFFF;
+              }
+          }
+      }
+  }
+    }
