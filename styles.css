@@ -9,6 +9,13 @@
 * body {
   background-color: #1f2e35;
   font-family: Poppins, san serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /*Header*/
   /*HERO*/
 }
@@ -68,13 +75,92 @@
   background-color: #1f2e35;
 }
 
-* body header nav .buttons {
+* body main {
+  max-width: 1000px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+* body main .hero_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+* body main .hero_text h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+* body main .hero_text p {
+  text-align: justify;
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px;
+}
+
+* body main .hero_text .hero_buttons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 20px;
+  font-size: 18px;
+}
+
+* body main .hero_text .hero_buttons button {
+  background-color: #02897a;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 600px;
+  font-family: Poppins, san serif;
+  margin: 10px;
+  font-size: 18px;
+}
+
+* body main .hero_text .hero_buttons a {
+  color: #ffffff;
+}
+
+* body main .hero_text .hero_buttons a i {
+  padding: 5px;
+  left: 4px;
+}
+
+* body main .hero_img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body main .hero_img img {
+  max-width: 100%;
+  max-height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1100px) {
-  header nav ul {
+  body header nav ul {
     position: fixed;
     left: -100%;
     color: black;
@@ -94,11 +180,24 @@
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-  header nav .hamburger {
+  body header nav .hamburger {
     margin: auto;
     cursor: pointer;
   }
-  header nav .hamburger .bar {
-    background-color: #FFFFFF;
+  body header nav .hamburger .bar {
+    background-color: #ffffff;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  body main .hero_img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 70%;
   }
 }
