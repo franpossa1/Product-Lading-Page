@@ -147,6 +147,7 @@ $color-terciary: #ffffff;
     header {
       nav {
         ul {
+          background-color: $Color-main;
           position: fixed;
           left: -100%;
           color: black;
@@ -172,9 +173,14 @@ $color-terciary: #ffffff;
     //Hero
     main {
       flex-direction: column;
-      width: 70%;
+      width: 85%;
       
-      //.hero_text{      }
+      .hero_text{     
+        margin-bottom: 40px;
+        p{
+          width: 100%;
+        }
+       }
       .hero_img{
         align-self:center;
        width: 70%;
