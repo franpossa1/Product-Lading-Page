@@ -21,6 +21,7 @@ $color-terciary: #ffffff;
   padding: 10px 20px;
   font-weight: 600px;
   font-family: $Font-Poppins;
+ 
 }
 @mixin menu_links {
   border: 1px solid $color-terciary;
@@ -116,7 +117,7 @@ $color-terciary: #ffffff;
           button {
             @include button-secundary();
             margin: 10px;
-            font-size: 18px;
+            
           }
           a {
             color: $color-terciary;
@@ -128,8 +129,10 @@ $color-terciary: #ffffff;
         }
       }
       .hero_img {
-        width: 50%;
         display: flex;
+        max-width: 100%;
+        
+        
 
         img {
           max-width: 100%;
@@ -180,11 +183,23 @@ $color-terciary: #ffffff;
         p{
           width: 100%;
         }
+        //div {
+         
+         
+         //button {
+
+         }
+         a {
+          font-size: 14px;
+         }
+         
+         
+        }
        }
       .hero_img{
-        align-self:center;
-       width: 70%;
+        width: 100%;
+       align-self:center;
       }
     }
-  }
-}
+  
+
