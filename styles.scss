@@ -234,10 +234,12 @@ $color-terciary: #ffffff;
     }
   }
   //SEctions
+  .section_container {
+    margin-top: 300px;
   .section1 {
     flex-direction: column;
     width: 85%;
-    margin-top: 300px;
+    
     .section_text{
       margin-bottom: 40px;
        p {
@@ -252,5 +254,6 @@ $color-terciary: #ffffff;
 
     }
   }
+}
 }
 }
