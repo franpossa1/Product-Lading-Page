@@ -4,6 +4,10 @@ $Font-Poppins: Poppins, san serif;
 $Color-main: #1f2e35;
 $color-secundary: #02897a;
 $color-terciary: #ffffff;
+@mixin random-bgr() {
+  color: rgb(random(255), 
+  random(255), random(255));
+}
 @mixin button-main {
   background-color: $Color-main;
   border: 1px solid black;
@@ -139,49 +143,54 @@ $color-terciary: #ffffff;
     }
     /* Sections*/
     .section_container {
-
-    
-    .section1 {
-      max-width: 1000px;
-      max-height: 400px;
-      width: 100%;
-      height: 100%;
       display: flex;
-      margin: auto;
-      .section_text{
+      flex-direction: column;
+      .section1 {
+        max-width: 1000px;
+        height: auto;
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $color-terciary;
-         p {
-           padding: 10px;
-         }
-      }
-      .section_img {
-        display: flex;
-        max-width: 100%;
-
-        img {
-          max-width: 100%;
-          max-height: 100%;
-          align-self: center;
+        margin: auto;
+        padding: 20px;
+        .section_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: $color-terciary;
+          padding: 20px;
+          p {
+            padding: 10px;
+            i {
+              @include random-bgr();
+              padding: 10px;
+            }
+          }
         }
+        .section_img {
+          display: flex;
+          max-width: 100%;
 
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            align-self: center;
+          }
+        }
       }
     }
-  }
   }
 }
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1100px) {
   body {
-    header { position: fixed;
+    header {
+      position: fixed;
       background-color: $Color-main;
       width: 85%;
       align-self: center;
       .header_logo {
-        
         width: 80%;
         align-items: center;
       }
@@ -224,36 +233,33 @@ $color-terciary: #ffffff;
         //div {
 
         //button {      }
-      a {
-        font-size: 14px;
+        a {
+          font-size: 14px;
+        }
+      }
+      .hero_img {
+        width: 100%;
+        align-self: center;
       }
     }
-    .hero_img {
-      width: 100%;
-      align-self: center;
+    //SEctions
+    .section_container {
+      margin-top: 300px;
+      .section1 {
+        flex-direction: column;
+        width: 85%;
+
+        .section_text {
+          margin-bottom: 40px;
+          p {
+            padding: 10px;
+          }
+        }
+        .section_img {
+          width: 100%;
+          align-self: center;
+        }
+      }
     }
   }
-  //SEctions
-  .section_container {
-    margin-top: 300px;
-  .section1 {
-    flex-direction: column;
-    width: 85%;
-    
-    .section_text{
-      margin-bottom: 40px;
-       p {
-         padding: 10px;
-       }
-    }
-    .section_img {
-      width: 100%;
-      align-self: center;
-
-      
-
-    }
-  }
-}
-}
 }
