@@ -200,7 +200,7 @@
 }
 
 * body .section_container .section1 .section_text p i {
-  color: #0122bc;
+  color: #fcb0f2;
   padding: 10px;
 }
 
@@ -217,6 +217,188 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+* body .video_container {
+  max-width: 1000px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin: auto;
+}
+
+* body .video_container .upper_text {
+  color: #ffffff;
+  padding: 20px;
+}
+
+* body .video_container iframe {
+  border-radius: 12px;
+}
+
+* body .video_container .lower_text {
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 10px 5% / 50px 25em 30px 35em;
+}
+
+* body .price_container {
+  max-width: 1000px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+* body .price_container .tablas_text {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+* body .price_container .tablas_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* body .price_container .tablas_container .tabla1 {
+  max-width: 322px;
+  max-height: 456px;
+  width: 100%;
+  height: 100%;
+  background-color: #02897a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+* body .price_container .tablas_container .tabla1 h4 {
+  max-height: 144px;
+  height: 100%;
+}
+
+* body .price_container .tablas_container .tabla1 p {
+  padding: 15px;
+}
+
+* body .price_container .tablas_container .tabla1 p i {
+  font-size: 70px;
+  padding: 5px;
+}
+
+* body .price_container .tablas_container .tabla1 button {
+  background-color: #1f2e35;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 600px;
+  font-family: Poppins, san serif;
+}
+
+* body .price_container .tablas_container .tabla2 {
+  max-width: 322px;
+  max-height: 456px;
+  width: 100%;
+  height: 100%;
+  background-color: #02897a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+* body .price_container .tablas_container .tabla2 h4 {
+  max-height: 144px;
+  height: 100%;
+}
+
+* body .price_container .tablas_container .tabla2 p {
+  padding: 15px;
+}
+
+* body .price_container .tablas_container .tabla2 p i {
+  font-size: 70px;
+  padding: 5px;
+}
+
+* body .price_container .tablas_container .tabla2 button {
+  background-color: #1f2e35;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 600px;
+  font-family: Poppins, san serif;
+}
+
+* body .price_container .tablas_container .tabla3 {
+  max-width: 322px;
+  max-height: 456px;
+  width: 100%;
+  height: 100%;
+  background-color: #02897a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+* body .price_container .tablas_container .tabla3 h4 {
+  max-height: 144px;
+  height: 100%;
+}
+
+* body .price_container .tablas_container .tabla3 p {
+  padding: 15px;
+}
+
+* body .price_container .tablas_container .tabla3 p i {
+  font-size: 70px;
+  padding: 5px;
+}
+
+* body .price_container .tablas_container .tabla3 button {
+  background-color: #1f2e35;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 600px;
+  font-family: Poppins, san serif;
 }
 
 /*MEDIA QUERIES*/
@@ -238,7 +420,7 @@
   body header nav ul {
     background-color: #1f2e35;
     position: fixed;
-    left: -100%;
+    left: -120%;
     color: black;
     top: 5rem;
     display: -webkit-box;
@@ -307,5 +489,33 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  body .video_container iframe {
+    margin: auto;
+  }
+  body .video_container .lower_text {
+    margin: auto;
+  }
+  body .price_container {
+    width: 85%;
+    margin: auto;
+  }
+  body .price_container .tablas_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  body .price_container .tablas_container .tabla1, body .price_container .tablas_container .tabla2, body .price_container .tablas_container .tabla3 {
+    height: 100%;
+    margin: 20px 0;
+  }
+  body .price_container .tablas_container .tabla1 h4, body .price_container .tablas_container .tabla2 h4, body .price_container .tablas_container .tabla3 h4 {
+    height: auto;
   }
 }

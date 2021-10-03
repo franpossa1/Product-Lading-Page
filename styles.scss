@@ -5,9 +5,25 @@ $Color-main: #1f2e35;
 $color-secundary: #02897a;
 $color-terciary: #ffffff;
 @mixin random-bgr() {
-  color: rgb(random(255), 
-  random(255), random(255));
+  color: rgb(random(255), random(255), random(255));
 }
+@mixin price_table {
+  max-width: 322px;
+  max-height: 456px;
+  width: 100%;
+  height: 100%;
+  background-color: $color-secundary;
+  justify-content: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 7px;
+  text-align: center;
+  h4 {
+    max-height: 144px;
+    height: 100%;
+  }
+}
+
 @mixin button-main {
   background-color: $Color-main;
   border: 1px solid black;
@@ -179,6 +195,89 @@ $color-terciary: #ffffff;
         }
       }
     }
+
+    .video_container {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      //justify-content: ;
+      align-items: flex-start;
+      padding: 20px;
+      margin: auto;
+      .upper_text {
+        color: $color-terciary;
+        padding: 20px;
+      }
+      iframe {
+        border-radius: 12px;
+      }
+      .lower_text {
+        background-color: $color-terciary;
+        width: 90%;
+        border-radius: 10px 5% / 50px 25em 30px 35em;
+      }
+    }
+    .price_container {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      margin: auto;
+      .tablas_text {
+        color: $color-terciary;
+        text-align: center;
+        padding: 20px;
+      }
+      .tablas_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .tabla1 {
+          @include price_table();
+          p {
+            padding: 15px;
+            i {
+              font-size: 70px;
+              padding: 5px;
+            }
+          }
+          button {
+            @include button-main();
+          }
+        }
+        .tabla2 {
+          @include price_table();
+          p {
+            padding: 15px;
+            i {
+              font-size: 70px;
+              padding: 5px;
+            }
+          }
+          button {
+            @include button-main();
+          }
+        }
+        .tabla3 {
+          @include price_table();
+          p {
+            padding: 15px;
+            i {
+              font-size: 70px;
+              padding: 5px;
+            }
+          }
+
+          button {
+            @include button-main();
+          }
+        }
+      }
+    }
   }
 }
 
@@ -198,7 +297,7 @@ $color-terciary: #ffffff;
         ul {
           background-color: $Color-main;
           position: fixed;
-          left: -100%;
+          left: -120%;
           color: black;
           top: 5rem;
           display: flex;
@@ -258,6 +357,36 @@ $color-terciary: #ffffff;
         .section_img {
           width: 100%;
           align-self: center;
+        }
+      }
+    }
+    .video_container {
+      iframe{
+        margin:auto;
+      }
+      .lower_text {
+        margin:auto;
+      }
+    }
+    //Tablas de precio
+    .price_container {
+      width: 85%;
+      margin: auto;
+      //.tablas_text {    }
+      .tablas_container {
+        display: flex;
+        flex-direction: column;
+        margin:0px;
+        padding: 0px;
+        .tabla1, .tabla2 , .tabla3 {
+         
+          height: 100%;
+
+          margin:20px 0;
+          h4{
+            
+            height: auto;
+          }
         }
       }
     }
