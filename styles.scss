@@ -278,6 +278,53 @@ $color-terciary: #ffffff;
         }
       }
     }
+    footer {
+      display: flex;
+      flex-flow: nowrap;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    padding: 15px;
+    
+      .footer_ab{
+        align-self: center;
+      text-align: center;
+      padding: 10px;
+    
+      }
+      .footer_recursos {
+        align-self: center;
+        color:$color-terciary;
+        padding: 10px;
+        margin:10px;
+      }
+      .footer_legal {
+        padding: 10px;
+        color:$color-terciary;
+        align-self: center;
+      }
+      .footer_signin{
+        h3 {
+          color:$color-terciary;
+          text-align: center;
+        }
+        padding: 10px;
+        align-self: center;
+        input[type="text"]{
+          width: 100%;
+          padding: 5 5 5 15;
+          font-family:$Font-Poppins;
+        border-radius: 4px;
+        border: none;
+        margin: 8px;
+        }
+        button {
+          @include button-secundary();
+          font-family: $Font-Poppins;
+          margin:auto;
+        }
+      }
+
+    }
   }
 }
 
@@ -370,7 +417,7 @@ $color-terciary: #ffffff;
     }
     //Tablas de precio
     .price_container {
-      width: 85%;
+      width: 90%;
       margin: auto;
       //.tablas_text {    }
       .tablas_container {
@@ -389,6 +436,9 @@ $color-terciary: #ffffff;
           }
         }
       }
+    }
+    footer {
+      flex-direction: column;
     }
   }
 }

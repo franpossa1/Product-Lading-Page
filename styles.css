@@ -200,7 +200,7 @@
 }
 
 * body .section_container .section1 .section_text p i {
-  color: #fcb0f2;
+  color: #5cd38c;
   padding: 10px;
 }
 
@@ -401,6 +401,77 @@
   font-family: Poppins, san serif;
 }
 
+* body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  margin-top: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px;
+}
+
+* body footer .footer_ab {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding: 10px;
+}
+
+* body footer .footer_recursos {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+}
+
+* body footer .footer_legal {
+  padding: 10px;
+  color: #ffffff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+* body footer .footer_signin {
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+* body footer .footer_signin h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+* body footer .footer_signin input[type="text"] {
+  width: 100%;
+  padding: 5 5 5 15;
+  font-family: Poppins, san serif;
+  border-radius: 4px;
+  border: none;
+  margin: 8px;
+}
+
+* body footer .footer_signin button {
+  background-color: #02897a;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 600px;
+  font-family: Poppins, san serif;
+  font-family: Poppins, san serif;
+  margin: auto;
+}
+
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1100px) {
   body header {
@@ -497,7 +568,7 @@
     margin: auto;
   }
   body .price_container {
-    width: 85%;
+    width: 90%;
     margin: auto;
   }
   body .price_container .tablas_container {
@@ -517,5 +588,11 @@
   }
   body .price_container .tablas_container .tabla1 h4, body .price_container .tablas_container .tabla2 h4, body .price_container .tablas_container .tabla3 h4 {
     height: auto;
+  }
+  body footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
