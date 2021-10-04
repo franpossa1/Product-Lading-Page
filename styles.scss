@@ -439,6 +439,27 @@ $color-terciary: #ffffff;
     }
     footer {
       flex-direction: column;
+      height: auto;
+      padding: 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  .footer_ab {
+    margin-bottom: 10px;
+  }
+  .footer_legal {
+    margin-bottom: 10px;
+    
+    
+    
+  }
+  .footer_recursos {
+    margin-bottom: 10px;
+    
+  }
+  .footer_signin {
+    margin-bottom: 10px;
+  }
+      
     }
   }
 }

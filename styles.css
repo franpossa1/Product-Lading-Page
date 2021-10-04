@@ -200,7 +200,7 @@
 }
 
 * body .section_container .section1 .section_text p i {
-  color: #5cd38c;
+  color: #627d86;
   padding: 10px;
 }
 
@@ -594,5 +594,21 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
+    padding: 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  body footer .footer_ab {
+    margin-bottom: 10px;
+  }
+  body footer .footer_legal {
+    margin-bottom: 10px;
+  }
+  body footer .footer_recursos {
+    margin-bottom: 10px;
+  }
+  body footer .footer_signin {
+    margin-bottom: 10px;
   }
 }
