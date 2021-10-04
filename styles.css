@@ -200,7 +200,7 @@
 }
 
 * body .section_container .section1 .section_text p i {
-  color: #627d86;
+  color: #d21f5d;
   padding: 10px;
 }
 
@@ -501,7 +501,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     text-align: center;
     -webkit-transition: 0.3s;
@@ -568,7 +568,7 @@
     margin: auto;
   }
   body .price_container {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
   body .price_container .tablas_container {
@@ -579,7 +579,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0px;
+    margin: auto;
+    width: 90%;
     padding: 0px;
   }
   body .price_container .tablas_container .tabla1, body .price_container .tablas_container .tabla2, body .price_container .tablas_container .tabla3 {

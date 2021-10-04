@@ -349,7 +349,7 @@ $color-terciary: #ffffff;
           top: 5rem;
           display: flex;
           flex-direction: column;
-          width: 100%;
+          width: 90%;
           border-radius: 10px;
           text-align: center;
           transition: 0.3s;
@@ -417,13 +417,14 @@ $color-terciary: #ffffff;
     }
     //Tablas de precio
     .price_container {
-      width: 90%;
+      width: 95%;
       margin: auto;
       //.tablas_text {    }
       .tablas_container {
         display: flex;
         flex-direction: column;
-        margin:0px;
+        margin:auto;
+        width:90%;
         padding: 0px;
         .tabla1, .tabla2 , .tabla3 {
          
