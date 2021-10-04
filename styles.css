@@ -200,7 +200,7 @@
 }
 
 * body .section_container .section1 .section_text p i {
-  color: #d21f5d;
+  color: #e0d8d6;
   padding: 10px;
 }
 
@@ -582,6 +582,9 @@
     margin: auto;
     width: 90%;
     padding: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .price_container .tablas_container .tabla1, body .price_container .tablas_container .tabla2, body .price_container .tablas_container .tabla3 {
     height: 100%;
