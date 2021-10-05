@@ -61,6 +61,14 @@
   color: #ffffff;
 }
 
+* body header nav ul li a:hover {
+  color: #9c9c9c;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  border-bottom: 3px solid #9c9c9c;
+  padding-bottom: 2px;
+}
+
 * body header nav .hamburger {
   margin: auto;
   color: #1f2e35;
@@ -134,6 +142,11 @@
   margin: 10px;
 }
 
+* body main .hero_text .hero_buttons button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 * body main .hero_text .hero_buttons a {
   color: #ffffff;
 }
@@ -200,7 +213,7 @@
 }
 
 * body .section_container .section1 .section_text p i {
-  color: #e0d8d6;
+  color: #254aa6;
   padding: 10px;
 }
 
@@ -323,6 +336,11 @@
   font-family: Poppins, san serif;
 }
 
+* body .price_container .tablas_container .tabla1 button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 * body .price_container .tablas_container .tabla2 {
   max-width: 322px;
   max-height: 456px;
@@ -362,6 +380,11 @@
   font-family: Poppins, san serif;
 }
 
+* body .price_container .tablas_container .tabla2 button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 * body .price_container .tablas_container .tabla3 {
   max-width: 322px;
   max-height: 456px;
@@ -399,6 +422,11 @@
   padding: 10px 20px;
   font-weight: 600px;
   font-family: Poppins, san serif;
+}
+
+* body .price_container .tablas_container .tabla3 button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 * body footer {
@@ -470,6 +498,11 @@
   font-family: Poppins, san serif;
   font-family: Poppins, san serif;
   margin: auto;
+}
+
+* body footer .footer_signin button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 /*MEDIA QUERIES*/
@@ -586,11 +619,15 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  body .price_container .tablas_container .tabla1, body .price_container .tablas_container .tabla2, body .price_container .tablas_container .tabla3 {
+  body .price_container .tablas_container .tabla1,
+  body .price_container .tablas_container .tabla2,
+  body .price_container .tablas_container .tabla3 {
     height: 100%;
     margin: 20px 0;
   }
-  body .price_container .tablas_container .tabla1 h4, body .price_container .tablas_container .tabla2 h4, body .price_container .tablas_container .tabla3 h4 {
+  body .price_container .tablas_container .tabla1 h4,
+  body .price_container .tablas_container .tabla2 h4,
+  body .price_container .tablas_container .tabla3 h4 {
     height: auto;
   }
   body footer {

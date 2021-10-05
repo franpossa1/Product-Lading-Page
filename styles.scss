@@ -32,6 +32,9 @@ $color-terciary: #ffffff;
   padding: 10px 20px;
   font-weight: 600px;
   font-family: $Font-Poppins;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 @mixin button-secundary {
   background-color: $color-secundary;
@@ -41,12 +44,18 @@ $color-terciary: #ffffff;
   padding: 10px 20px;
   font-weight: 600px;
   font-family: $Font-Poppins;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 @mixin menu_links {
   border: 1px solid $color-terciary;
   border-radius: 4px;
   padding: 20px;
   background-color: $color-secundary;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
 }
 /*STYLES*/
 * {
@@ -86,6 +95,12 @@ $color-terciary: #ffffff;
             a {
               text-decoration: none;
               color: $color-terciary;
+              &:hover {
+                color: #9c9c9c;
+                transform: scale(1.1, 1.1);
+                border-bottom: 3px solid #9c9c9c;
+                padding-bottom: 2px;
+              }
             }
           }
         }
@@ -281,49 +296,47 @@ $color-terciary: #ffffff;
     footer {
       display: flex;
       flex-flow: nowrap;
-    margin-top: 30px;
-    justify-content: space-evenly;
-    padding: 15px;
-    
-      .footer_ab{
+      margin-top: 30px;
+      justify-content: space-evenly;
+      padding: 15px;
+
+      .footer_ab {
         align-self: center;
-      text-align: center;
-      padding: 10px;
-    
+        text-align: center;
+        padding: 10px;
       }
       .footer_recursos {
         align-self: center;
-        color:$color-terciary;
+        color: $color-terciary;
         padding: 10px;
-        margin:10px;
+        margin: 10px;
       }
       .footer_legal {
         padding: 10px;
-        color:$color-terciary;
+        color: $color-terciary;
         align-self: center;
       }
-      .footer_signin{
+      .footer_signin {
         h3 {
-          color:$color-terciary;
+          color: $color-terciary;
           text-align: center;
         }
         padding: 10px;
         align-self: center;
-        input[type="text"]{
+        input[type="text"] {
           width: 100%;
           padding: 5 5 5 15;
-          font-family:$Font-Poppins;
-        border-radius: 4px;
-        border: none;
-        margin: 8px;
+          font-family: $Font-Poppins;
+          border-radius: 4px;
+          border: none;
+          margin: 8px;
         }
         button {
           @include button-secundary();
           font-family: $Font-Poppins;
-          margin:auto;
+          margin: auto;
         }
       }
-
     }
   }
 }
@@ -408,11 +421,11 @@ $color-terciary: #ffffff;
       }
     }
     .video_container {
-      iframe{
-        margin:auto;
+      iframe {
+        margin: auto;
       }
       .lower_text {
-        margin:auto;
+        margin: auto;
       }
     }
     //Tablas de precio
@@ -423,17 +436,17 @@ $color-terciary: #ffffff;
       .tablas_container {
         display: flex;
         flex-direction: column;
-        margin:auto;
-        width:90%;
+        margin: auto;
+        width: 90%;
         padding: 0px;
         align-items: center;
-        .tabla1, .tabla2 , .tabla3 {
-         
+        .tabla1,
+        .tabla2,
+        .tabla3 {
           height: 100%;
 
-          margin:20px 0;
-          h4{
-            
+          margin: 20px 0;
+          h4 {
             height: auto;
           }
         }
@@ -443,25 +456,20 @@ $color-terciary: #ffffff;
       flex-direction: column;
       height: auto;
       padding: 0px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  .footer_ab {
-    margin-bottom: 10px;
-  }
-  .footer_legal {
-    margin-bottom: 10px;
-    
-    
-    
-  }
-  .footer_recursos {
-    margin-bottom: 10px;
-    
-  }
-  .footer_signin {
-    margin-bottom: 10px;
-  }
-      
+      font-size: 18px;
+      margin-bottom: 10px;
+      .footer_ab {
+        margin-bottom: 10px;
+      }
+      .footer_legal {
+        margin-bottom: 10px;
+      }
+      .footer_recursos {
+        margin-bottom: 10px;
+      }
+      .footer_signin {
+        margin-bottom: 10px;
+      }
     }
   }
 }
